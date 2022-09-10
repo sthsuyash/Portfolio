@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiPython, DiJava, DiMysql, DiReact, DiLinux, DiGit } from 'react-icons/di';
+import { DiPython, DiJava, DiMysql, DiReact, DiLinux, DiGit, DiDocker } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -56,17 +56,17 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Operating System</ListTitle>
           <ListParagraph>
-            Linux, Windows
+            Windows(Primary), Ubuntu distributions, Red Hat Enterprise Linux
           </ListParagraph>
         </ListContainer>
       </ListItem>
 
       <ListItem>
-        <DiGit size='4rem' />
+        <DiDocker size='4rem' />
         <ListContainer>
           <ListTitle>Other</ListTitle>
           <ListParagraph>
-            Git, Github, Postman, SPSS, Bash, Jupyter Notebook
+            Docker, Git, Github, Postman, SPSS, Bash, Jupyter Notebook
           </ListParagraph>
         </ListContainer>
       </ListItem>
