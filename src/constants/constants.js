@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Blog Site',
     description: "This is a project for blog site created using SpringBoot for backend, MySQL database following Spring-MVC architecture.",
-    image: 'public/images/1.jpg',
+    image: '/images/1.jpg',
     tags: ['SpringBoot', 'Spring-Security', 'MySQL', 'JWT', 'JPA'],
     source: 'https://github.com/sthsuyash/Blog-Site',
     visit: 'https://github.com/sthsuyash/Blog-Site',
