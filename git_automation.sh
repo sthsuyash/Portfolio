@@ -1,7 +1,12 @@
+# terminal command for repetitive git commands
+
 #!/bin/bash
 
-git add .
+for program in "$@"; do
+    # echo $program
+    git add $program
+done
 
-git commit -m $1
-
+read -p "Enter commit message: " message
+git commit -m "$message"
 git push
