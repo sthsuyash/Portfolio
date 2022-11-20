@@ -16,7 +16,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>BackEnd</ListTitle>
           <ListParagraph>
-            NodeJS, php, Java servlets, SpringBoot
+            SpringBoot, NodeJS, php, Java servlets
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -56,7 +56,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Operating System</ListTitle>
           <ListParagraph>
-            Windows(Primary), Ubuntu distributions, Red Hat Enterprise Linux
+            Ubuntu distributions, Windows, Red Hat Enterprise Linux
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -66,7 +66,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Other</ListTitle>
           <ListParagraph>
-            Docker, Git, Github, Postman, SPSS, Bash, Jupyter Notebook
+            Git, Github, Postman, SPSS, Jupyter Notebook
           </ListParagraph>
         </ListContainer>
       </ListItem>
