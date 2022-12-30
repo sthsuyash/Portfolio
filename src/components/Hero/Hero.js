@@ -10,7 +10,7 @@ const Hero = () => (
     <LeftSection>
       <SectionTitle main center>
         I'm Suyash, <br />
-        a Developer and Analyst
+        a Developer.
       </SectionTitle>
       <SectionText>
         I'm a Full Stack Developer based in Kathmandu, Nepal, a hardworking developer and quick learner focused on completing work quickly to consistently exceed targets dedicated to business success.<br />
