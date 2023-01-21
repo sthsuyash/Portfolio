@@ -8,7 +8,7 @@ const Technologies = () => (
     <SectionDivider style={{ marginTop: "2rem", marginBottom: "5rem" }} />
     <br />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>I've worked with a range of technologies in the Web Development world as well as Software Development.</SectionText>
+    <SectionText>I've worked with a range of technologies in the Web Development, Software Development and Machine Learning frameworks.</SectionText>
 
     <List>
       <ListItem>
