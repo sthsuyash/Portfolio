@@ -16,7 +16,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>BackEnd</ListTitle>
           <ListParagraph>
-            SpringBoot, NodeJS, php, Java servlets
+            SpringBoot, NodeJS, php, Java servlets, Flask
           </ListParagraph>
         </ListContainer>
       </ListItem>
