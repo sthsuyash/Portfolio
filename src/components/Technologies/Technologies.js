@@ -36,7 +36,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>FrontEnd</ListTitle>
           <ListParagraph>
-            HTML, CSS, JavaScript, React.js, BootStrap
+            HTML, CSS, JavaScript, React.js, BootStrap5
           </ListParagraph>
         </ListContainer>
       </ListItem>
