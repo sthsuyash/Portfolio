@@ -16,7 +16,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>BackEnd</ListTitle>
           <ListParagraph>
-            SpringBoot, NodeJS, php, Java servlets, Flask
+            SpringBoot, NodeJS, php, Java servlets, Flask, Postman
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -66,7 +66,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Other</ListTitle>
           <ListParagraph>
-            Git, Github, Postman, SPSS, Jupyter Notebook
+            Git, Github, SPSS, Jupyter Notebook
           </ListParagraph>
         </ListContainer>
       </ListItem>
