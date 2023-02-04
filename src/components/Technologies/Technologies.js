@@ -10,6 +10,7 @@ const Technologies = () => (
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>I've worked with a range of technologies in the Web Development, Software Development and Machine Learning frameworks.</SectionText>
 
+    {/* main outer list of technologies */}
     <List>
       <ListItem>
         <DiJava size='4rem' />
