@@ -12,6 +12,8 @@ const Technologies = () => (
 
     {/* main outer list of technologies */}
     <List>
+      
+      {/* backend technologies list */}
       <ListItem>
         <DiJava size='4rem' />
         <ListContainer>
