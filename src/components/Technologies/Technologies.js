@@ -35,6 +35,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
 
+      {/* frontend technologies list */}
       <ListItem>
         <DiReact size='4rem' />
         <ListContainer>
