@@ -24,6 +24,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
 
+      {/* databases technologies list */}
       <ListItem>
         <DiMysql size='4rem' />
         <ListContainer>
