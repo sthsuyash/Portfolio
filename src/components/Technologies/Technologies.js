@@ -46,6 +46,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
 
+      {/* software development technologies list */}
       <ListItem>
         <DiPython size='4rem' />
         <ListContainer>
