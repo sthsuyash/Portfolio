@@ -57,6 +57,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
 
+      {/* Operating System technologies list */}
       <ListItem>
         <DiLinux size='4rem' />
         <ListContainer>
@@ -67,6 +68,7 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
 
+      {/* machine learning technologies list */}
       <ListItem></ListItem>
 
       <ListItem>
