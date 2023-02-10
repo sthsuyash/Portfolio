@@ -71,6 +71,7 @@ const Technologies = () => (
       {/* machine learning technologies list */}
       <ListItem></ListItem>
 
+      {/* other technologies list */}
       <ListItem>
         <DiDocker size='4rem' />
         <ListContainer>
