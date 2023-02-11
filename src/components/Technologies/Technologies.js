@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiPython, DiJava, DiMysql, DiReact, DiLinux, DiGit, DiDocker } from 'react-icons/di';
+import { DiPython, DiJava, DiMysql, DiReact, DiLinux, DiDocker } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -12,7 +12,7 @@ const Technologies = () => (
 
     {/* main outer list of technologies */}
     <List>
-      
+
       {/* backend technologies list */}
       <ListItem>
         <DiJava size='4rem' />
@@ -48,7 +48,7 @@ const Technologies = () => (
 
       {/* software development technologies list */}
       <ListItem>
-        <DiPython size='4rem' />
+        <DiJava size='4rem' />
         <ListContainer>
           <ListTitle>Software Development</ListTitle>
           <ListParagraph>
@@ -69,7 +69,15 @@ const Technologies = () => (
       </ListItem>
 
       {/* machine learning technologies list */}
-      <ListItem></ListItem>
+      <ListItem>
+        <DiPython size='4rem' />
+        <ListContainer>
+          <ListTitle>Machine Learning and Data Science</ListTitle>
+          <ListParagraph>
+            Python, Scikit-learn, Pandas, Numpy, Matplotlib, Seaborn, Tensorflow, Keras, MS-Excel
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
 
       {/* other technologies list */}
       <ListItem>
