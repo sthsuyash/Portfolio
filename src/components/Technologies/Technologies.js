@@ -68,6 +68,17 @@ const Technologies = () => (
         </ListContainer>
       </ListItem>
 
+        {/* other technologies list */}
+        <ListItem>
+        <DiDocker size='4rem' />
+        <ListContainer>
+          <ListTitle>Other</ListTitle>
+          <ListParagraph>
+            Git, Github, SPSS, Jupyter Notebook
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+
       {/* machine learning technologies list */}
       <ListItem>
         <DiPython size='4rem' />
@@ -78,18 +89,6 @@ const Technologies = () => (
           </ListParagraph>
         </ListContainer>
       </ListItem>
-
-      {/* other technologies list */}
-      <ListItem>
-        <DiDocker size='4rem' />
-        <ListContainer>
-          <ListTitle>Other</ListTitle>
-          <ListParagraph>
-            Git, Github, SPSS, Jupyter Notebook
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-
     </List>
   </Section>
 );
