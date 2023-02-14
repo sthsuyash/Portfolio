@@ -46,9 +46,9 @@ const Timeline = () => {
       <SectionDivider style={{ marginBottom: "4rem" }} />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I started my programming journey as my friend suggested me, when I was in late teens and quickly became fond if it.<br />
-        Now I develop new ideas and provide help in completing the projects you desire.
-        I can create and design websites and web applications, just as you would like to have using the latest technology available along with Softwares.
+        I was fascinated about the new and ever developing technologies since I was a kid but didn't pursue programming skills. I started my programming journey in the late teens after high school and quickly became fond if it.<br />
+        Now, I develop new ideas and provide help in completing the projects you desire.
+        I can create and design websites and web applications, just as you would like to have using the latest technology available along with softwares.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
