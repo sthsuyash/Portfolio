@@ -41,7 +41,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>FrontEnd</ListTitle>
           <ListParagraph>
-            HTML, CSS, JavaScript, React.js, BootStrap5
+            HTML, CSS, JavaScript, ReactJS, BootStrap5
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -74,7 +74,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Other</ListTitle>
           <ListParagraph>
-            Git, Github, SPSS, Jupyter Notebook
+            Git, Github, Docker
           </ListParagraph>
         </ListContainer>
       </ListItem>
