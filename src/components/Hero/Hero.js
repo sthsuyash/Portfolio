@@ -13,7 +13,7 @@ const Hero = () => (
         a Developer.
       </SectionTitle>
       <SectionText>
-        I'm a Full Stack Developer based in Kathmandu, Nepal, a hardworking developer and quick learner focused on completing work quickly to consistently exceed targets dedicated to business success.<br />
+        I'm a Full Stack Developer based in Kathmandu, Nepal, a diligent and quick learner focused to consistently exceed targets dedicated to business success.<br />
         I am keen on Machine Learning and Data Analytics.
       </SectionText>
       <Button onClick={() => window.location = 'https://github.com/sthsuyash'}>Learn More</Button>
