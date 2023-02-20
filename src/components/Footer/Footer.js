@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillKaggle, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiOutlineVerticalRight, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
@@ -32,7 +32,7 @@ const Footer = () => {
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://www.kaggle.com/sthsuyash/">
-            <AiFillKaggle size="3rem" />
+            <AiOutlineVerticalRight size="3rem" />
           </SocialIcons>
         </SocialContainer>
 
