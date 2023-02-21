@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 // import the Head component for appending elements to the head of the page
@@ -62,12 +62,6 @@ const Header = () => (
       </SocialIcons>
       <SocialIcons href="https://www.linkedin.com/in/sthsuyash/">
         <AiFillLinkedin size="3rem" />
-      </SocialIcons>
-      <SocialIcons href="https://facebook.com/suyashstha">
-        <AiFillFacebook size="3rem" />
-      </SocialIcons>
-      <SocialIcons href="https://instagram.com/sthsuyash">
-        <AiFillInstagram size="3rem" />
       </SocialIcons>
     </Div3>
 
