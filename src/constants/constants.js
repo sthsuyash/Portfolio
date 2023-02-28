@@ -61,7 +61,7 @@ export const TimeLineData = [
   { year: '2021/05', text: 'Self taught Python fundamentals', },
   { year: '2021/11', text: 'Studied C/C++ as per university guidelines', },
   { year: '2022/01', text: 'Started Web Development learning plain HTML, CSS and JavaScript', },
-  { year: '2022/05', text: 'Started working as Intern in Code House Media', },
+  { year: '2022/05', text: 'Started working as Intern in Kiko Solutions', },
   { year: '2022', text: 'Learnt basic ReactJS', },
   { year: '2022', text: 'Learnt Java SpringBoot for backend along with databases MySQL and PostgreSQL', },
   // { year: '2022', text: '', },
