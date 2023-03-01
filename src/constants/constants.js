@@ -64,5 +64,6 @@ export const TimeLineData = [
   { year: '2022/05', text: 'Started working as Intern in Kiko Solutions', },
   { year: '2022', text: 'Learnt basic ReactJS', },
   { year: '2022', text: 'Learnt Java SpringBoot for backend along with databases MySQL and PostgreSQL', },
-  // { year: '2022', text: '', },
+  { year: '2022/11', text: 'Completed Internship at Kiko Solutions', },
+  // { year: '2023', text: '', },
 ];
