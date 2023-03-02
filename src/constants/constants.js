@@ -58,6 +58,7 @@ export const projects = [
 
 export const TimeLineData = [
   { year: '2021/02', text: 'Started my self taught developer journey', },
+  { year: '2021', text: 'Started bachelors degree in Computer Science and Information Technology', },
   { year: '2021/05', text: 'Self taught Python fundamentals', },
   { year: '2021/11', text: 'Studied C/C++ as per university guidelines', },
   { year: '2022/01', text: 'Started Web Development learning plain HTML, CSS and JavaScript', },
