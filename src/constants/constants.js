@@ -68,4 +68,5 @@ export const TimeLineData = [
   { year: '2022/11', text: 'Completed Internship at Kiko Solutions', },
   { year: '2023/02', text: 'Started Machine Learning', },
   // { year: '2023', text: '', },
+  // { year: '2025', text: 'Completed bachelors degree', },
 ];
