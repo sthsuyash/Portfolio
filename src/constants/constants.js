@@ -39,7 +39,7 @@ export const projects = [
     title: 'NewsLetter Signup',
     description: "Made by nodeJS for api practice by simple News letter subscription app.",
     image: '/images/newsletter.jpg',
-    tags: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'ExpressJS'],
     source: 'https://github.com/sthsuyash/NewsLetter-Signup',
     visit: 'https://github.com/sthsuyash/NewsLetter-Signup',
     id: 4,
