@@ -1,9 +1,11 @@
-import { ThemeToggler } from "@/components/ThemeToggler";
+import About from "./components/About";
+import Hero from "./components/HeroSection/Hero";
 
 export default function Home() {
   return (
     <main>
-      <ThemeToggler />
+      <Hero />
+      <About />
     </main>
   );
 }
