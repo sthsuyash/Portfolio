@@ -11,7 +11,6 @@ type NavProps = {
 
 const links = [
   { path: "/", name: "Home" },
-  // { path: '/about', name: 'About' },
   { path: "/projects", name: "My Projects" },
   { path: "/contact", name: "Contact" },
 ];
@@ -20,7 +19,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }: NavProps) => {
   const path = usePathname();
   return (
     <nav className={`${containerStyles}`}>
-      {links.map((link, index) => {
+      {links.map((link, index: number) => {
         return (
           <Link
             key={index}

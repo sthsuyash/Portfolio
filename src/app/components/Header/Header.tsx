@@ -1,10 +1,10 @@
 "use client";
 
-import Logo from "./Logo";
+import Logo from "../HeroSection/Logo";
 import { useState, useEffect } from "react";
 import { ThemeToggler } from "./ThemeToggler";
-import Nav from "./Nav";
-import MobileNav from "./MobileNav";
+import Nav from "./Nav/Nav";
+import MobileNav from "./Nav/MobileNav";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
     <header
       className={`${
         header
-          ? "py-4 bg-white shadow-lg dark:bg-accent"
+          ? "py-4 bg-white shadow-lg dark:bg-background dark:shadow-slate-800"
           : "py-6 dark:bg-transparent"
       } sticky top-0 z-30 transition-all ${pathname === "/" && "bg-[#FEF9F5]"}`}
     >

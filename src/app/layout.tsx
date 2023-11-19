@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.scss";
-import Header from "@/app/components/HeroSection/Header";
+import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -82,7 +82,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>

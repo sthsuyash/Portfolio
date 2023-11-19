@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 import { AiOutlineTool } from "react-icons/ai";
 import { RiBriefcase4Fill, RiTodoFill, RiArrowDownSLine } from "react-icons/ri";
 
-import MyImage from "./MyImage";
+import MyImage from "../MyImage";
 import Badge from "./Badge";
 import Socials from "./Socials";
 
@@ -17,7 +17,7 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Software Engineer
             </div>
-            <h1 className="hero-h1 mb-4">
+            <h1 className="h1 mb-4">
               Hey👋
               <br />I am <span className="text-primary">Suyash Shrestha</span>
             </h1>
@@ -66,7 +66,7 @@ const Hero = () => {
               badgeText="Current Skill Focus"
             />
             {/* Image container */}
-            <div className="bg-hero_shape2 dark:bg-hero_shape2_dark w-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+            <div className="bg-hero_shape2 dark:bg-hero_shape_dark w-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <MyImage
               containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
               imgSrc="/hero/me.png"
