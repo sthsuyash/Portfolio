@@ -1,5 +1,5 @@
 import React from "react";
-import * as LucideIcons from "lucide-react";
+import { createLucideIcon } from "lucide-react"; 
 
 interface IconProps {
   name: string;
@@ -7,7 +7,9 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ name, className }) => {
-  const LucideIcon = LucideIcons[name];
+  // Assuming createLucideIcon returns a LucideIconComponent
+  const LucideIcon = createLucideIcon(name, { displayName: name });
+
   if (!LucideIcon) {
     console.error(`Lucide icon "${name}" not found.`);
     return null;
