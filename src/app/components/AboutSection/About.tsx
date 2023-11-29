@@ -9,6 +9,7 @@ const AboutSection: React.FC = () => {
   const getData = (arr: any[], title: string) => {
     return arr.find((item) => item.title === title);
   };
+
   return (
     <section className="pb-12 md:py-24">
       <div className="container mx-auto">
