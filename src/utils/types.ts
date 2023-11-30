@@ -1,5 +1,8 @@
+import * as LucideIcons from "lucide-react";
+type LucideIconNames = keyof typeof LucideIcons;
+
 export interface IInfoData {
-  icon: string;
+  icon: LucideIconNames;
   text: string;
 }
 
