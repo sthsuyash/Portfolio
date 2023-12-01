@@ -24,3 +24,9 @@ export interface ISkillsData {
     img?: string;
   }[];
 }
+
+export interface IServicesData {
+  icon: LucideIconNames;
+  title: string;
+  description: string;
+}

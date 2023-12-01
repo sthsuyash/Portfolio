@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Suyash Shrestha | Software Engineer",
+  title: "Suyash Shrestha",
   description: "This is the personal portfolio site of Suyash Shrestha.",
   keywords: [
     "Suyash Shrestha",
@@ -82,7 +82,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
