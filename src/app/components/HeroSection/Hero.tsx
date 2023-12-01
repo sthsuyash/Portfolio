@@ -6,7 +6,7 @@ import { RiBriefcase4Fill, RiTodoFill, RiArrowDownSLine } from "react-icons/ri";
 
 import MyImage from "../MyImage";
 import Badge from "./Badge";
-import Socials from "./Socials";
+import Socials from "../Socials";
 
 const Hero = () => {
   return (
