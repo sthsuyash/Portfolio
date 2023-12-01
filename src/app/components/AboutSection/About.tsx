@@ -1,4 +1,4 @@
-import Icon from "./Icon";
+import Icon from "../Icon";
 import Image from "next/image";
 import MyImage from "../MyImage";
 import { InfoData, QualificationData, SkillsData } from "@/utils/data";
