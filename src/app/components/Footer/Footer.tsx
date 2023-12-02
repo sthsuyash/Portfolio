@@ -1,4 +1,4 @@
-import Socials from "./Socials";
+import Socials from "../Socials";
 
 const Footer = () => {
   const date = new Date();
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
+  );
 };
 
 export default Footer;
