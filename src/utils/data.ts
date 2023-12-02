@@ -2,7 +2,7 @@ import {
   IInfoData,
   IQualificationData,
   ISkillsData,
-  IServicesData
+  IServicesData,
 } from "@/utils/types";
 
 export const InfoData: IInfoData[] = [
@@ -171,16 +171,19 @@ export const ServicesData: IServicesData[] = [
   {
     icon: "GanttChartSquare",
     title: "Web Development",
-    description: "Transform your online presence with my personalized web development services. As an individual with a year of expertise, I specialize in creating unique websites that reflect your identity. Whether you're starting something new or giving your current space a makeover, let's collaborate to make your digital presence shine. Your story, beautifully crafted online – that's my commitment. Let's build something special together",
+    description:
+      "Transform your online presence with my personalized web development services. As an individual with a year of expertise, I specialize in creating unique websites that reflect your identity. Whether you're starting something new or giving your current space a makeover, let's collaborate to make your digital presence shine. Your story, beautifully crafted online – that's my commitment. Let's build something special together",
   },
   {
     icon: "Database",
     title: "Data Science",
-    description: "Elevate your data game with my personalized data science services. I specialize in turning raw data into actionable insights. Whether you're delving into a new project or seeking to extract value from your existing data, I'm here to guide you. From predictive analytics to machine learning, let's harness the power of data to fuel your success. Let's embark on a data-driven journey together!",
+    description:
+      "Elevate your data game with my personalized data science services. I specialize in turning raw data into actionable insights. Whether you're delving into a new project or seeking to extract value from your existing data, I'm here to guide you. From predictive analytics to machine learning, let's harness the power of data to fuel your success. Let's embark on a data-driven journey together!",
   },
   {
     icon: "Smartphone",
     title: "Mobile Development",
-    description: "Celebrate your digital journey with my tailored mobile development services. I specialize in creating user-friendly and innovative mobile applications. Whether you're launching a new app or refining your current one, I'm here to bring your ideas to life. From sleek design to smooth functionality, let's build mobile solutions that resonate with your audience. Let's make your mobile presence remarkable together",
+    description:
+      "Celebrate your digital journey with my tailored mobile development services. I specialize in creating user-friendly and innovative mobile applications. Whether you're launching a new app or refining your current one, I'm here to bring your ideas to life. From sleek design to smooth functionality, let's build mobile solutions that resonate with your audience. Let's make your mobile presence remarkable together",
   },
 ];
