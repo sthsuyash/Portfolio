@@ -66,7 +66,7 @@ const AboutSection: React.FC = () => {
                     <ul className="grid xl:grid-cols-2 gap-4 mb-12">
                       {InfoData.map((item, index) => (
                         <li
-                          className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                          className="flex items-center gap-x-4 w-[270px] mx-auto xl:mx-0"
                           key={index}
                         >
                           <Icon className="text-primary" name={item.icon} />

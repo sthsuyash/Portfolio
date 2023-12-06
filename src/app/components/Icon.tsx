@@ -1,5 +1,5 @@
-import React from 'react';
-import * as LucideIcons from 'lucide-react';
+import React from "react";
+import * as LucideIcons from "lucide-react";
 
 type LucideIconNames = keyof typeof LucideIcons;
 
@@ -9,7 +9,9 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Icon: React.FC<IconProps> = ({ name, className, ...restProps }) => {
-  const IconComponent = LucideIcons[name] as React.FC<React.SVGProps<SVGSVGElement>>;
+  const IconComponent = LucideIcons[name] as React.FC<
+    React.SVGProps<SVGSVGElement>
+  >;
 
   if (!IconComponent) {
     console.error(`Icon '${name}' not found in Lucide.`);
