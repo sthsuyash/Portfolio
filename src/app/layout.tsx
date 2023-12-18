@@ -4,6 +4,7 @@ import "./globals.scss";
 import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Toaster } from "sonner";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -82,6 +83,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           {children}
+          <Toaster richColors position="bottom-left" />
           <Footer />
         </ThemeProvider>
       </body>

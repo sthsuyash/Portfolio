@@ -1,5 +1,6 @@
 import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
 import Form from "./Form";
+import { InfoData } from "@/utils/data";
 
 const Contact = () => {
   return (
@@ -17,9 +18,8 @@ const Contact = () => {
               Shall we collaborate?
             </h1>
             <p className="subtitle">
-              Excited to combine our strengths for success.
-              Any ideas or preferences? Let's create something amazing together!
-              🚀
+              Excited to combine our strengths for success. Any ideas or
+              preferences? Let's create something amazing together! 🚀
             </p>
           </div>
           {/* illustration */}
@@ -32,18 +32,18 @@ const Contact = () => {
           <div className="flex flex-col gap-y-4 xl:gap-y-14 mb-12 xl:mb-24 text-base xl:text-lg">
             {/* mail */}
             <div className="flex items-center gap-x-8">
-              <MailIcon size={18} className="text-primary" />
-              <div>sthasuyash11@gmail.com</div>
+              <MailIcon size={26} className="text-primary" />
+              <div>{InfoData[2].text}</div>
             </div>
             {/* address */}
             <div className="flex items-center gap-x-8">
-              <HomeIcon size={18} className="text-primary" />
-              <div>Kathmandu, Nepal</div>
+              <HomeIcon size={26} className="text-primary" />
+              <div>{InfoData[3].text}</div>
             </div>
             {/* phone */}
             <div className="flex items-center gap-x-8">
-              <PhoneCall size={18} className="text-primary" />
-              <div>+977-9841309522</div>
+              <PhoneCall size={26} className="text-primary" />
+              <div>{InfoData[1].text}</div>
             </div>
           </div>
           {/* form  */}
