@@ -9,6 +9,7 @@ import { z } from "zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { toast } from "sonner";
 import _debounce from "lodash/debounce";
+import { Spinner } from "@/components/ui/Spinner/Spinner";
 
 // creating a schema for the form
 const schema = z.object({
@@ -56,9 +57,7 @@ export default function Form() {
     }
   };
 
-  // debouncing the submit function to avoid spamming
-  // this will be called only after 2 seconds of the last call
-  const debouncedSubmit = _debounce(onSubmit, 2000);
+  const debouncedSubmit = _debounce(onSubmit, 500);
 
   const handleFormSubmit = (data: Schema) => {
     debouncedSubmit(data);
@@ -122,26 +121,3 @@ export default function Form() {
     </form>
   );
 }
-
-const Spinner = ({ size }: { size: number }) => (
-  <svg
-    className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-    fill="none"
-    viewBox="0 0 24 24"
-  >
-    <circle
-      className="opacity-25"
-      cx="12"
-      cy="12"
-      r="10"
-      stroke="currentColor"
-      strokeWidth="4"
-    ></circle>
-    <path
-      className="opacity-75"
-      fill="currentColor"
-      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-    ></path>
-  </svg>
-);
-
