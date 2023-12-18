@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,7 +8,6 @@ import { Mail, MessageSquare, Send, User } from "lucide-react";
 import { z } from "zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { toast } from "sonner";
-import emailjs from "@emailjs/browser";
 import _debounce from "lodash/debounce";
 
 // creating a schema for the form
@@ -24,38 +24,51 @@ export default function Form() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<Schema>();
 
+  // loading state for the button
+  const [loading, setLoading] = useState(false);
+
   const onSubmit: SubmitHandler<Schema> = async (data) => {
-    console.log(data);
+    setLoading(true);
+
     try {
       schema.parse(data);
-      const result = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        data,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      );
-      console.log("result:", result);
-
-      console.log(result.text);
-      toast.success(result.text);
+      const response = await fetch("/api/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      const result = await response.json();
+      if (result?.success) {
+        toast.success(result.message);
+      } else {
+        toast.error(result.message);
+      }
     } catch (error: any) {
-      console.error(error);
-      toast.error(error);
+      const err = JSON.parse(error?.message);
+      toast.error(err[0].message);
+    } finally {
+      setLoading(false);
     }
   };
 
-  const debouncedSubmit = _debounce(onSubmit, 500);
+  // debouncing the submit function to avoid spamming
+  // this will be called only after 2 seconds of the last call
+  const debouncedSubmit = _debounce(onSubmit, 2000);
 
   const handleFormSubmit = (data: Schema) => {
     debouncedSubmit(data);
   };
 
   return (
-    <form onSubmit={handleSubmit(handleFormSubmit)} className="flex flex-col gap-y-4">
+    <form
+      onSubmit={handleSubmit(handleFormSubmit)}
+      className="flex flex-col gap-y-4"
+    >
       {/* name */}
       <div className="relative flex items-center">
         <User className="absolute left-4 text-primary" size={20} />
@@ -65,6 +78,7 @@ export default function Form() {
           placeholder="Full Name"
           {...register("name", { required: true })}
         />
+        <span className="text-red-500">{errors.name?.message}</span>
       </div>
       {/* email */}
       <div className="relative flex items-center">
@@ -75,6 +89,7 @@ export default function Form() {
           placeholder="Email Address"
           {...register("email", { required: true })}
         />
+        <span className="text-red-500">{errors.email?.message}</span>
       </div>
       {/* message */}
       <div className="relative flex items-center">
@@ -87,11 +102,46 @@ export default function Form() {
           placeholder="Your Message..."
           {...register("message", { required: true })}
         />
+        <span className="text-red-500">{errors.message?.message}</span>
       </div>
-      <Button className="rounded-xl flex items-center gap-x-2">
-        Fancy a talk?
+      <Button
+        className={`rounded-xl flex items-center gap-x-2 ${loading ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+        type="submit"
+        disabled={loading}
+      >
+        {loading ? (
+          <>
+            <Spinner size={20} />Sending...
+          </>
+        ) : (
+          "Fancy a talk?"
+        )}
         <Send size={20} />
       </Button>
     </form>
   );
-};
+}
+
+const Spinner = ({ size }: { size: number }) => (
+  <svg
+    className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+    fill="none"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      className="opacity-25"
+      cx="12"
+      cy="12"
+      r="10"
+      stroke="currentColor"
+      strokeWidth="4"
+    ></circle>
+    <path
+      className="opacity-75"
+      fill="currentColor"
+      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+    ></path>
+  </svg>
+);
+
