@@ -104,14 +104,16 @@ export default function Form() {
         <span className="text-red-500">{errors.message?.message}</span>
       </div>
       <Button
-        className={`rounded-xl flex items-center gap-x-2 ${loading ? "opacity-50 cursor-not-allowed" : ""
-          }`}
+        className={`rounded-xl flex items-center gap-x-2 ${
+          loading ? "opacity-50 cursor-not-allowed" : ""
+        }`}
         type="submit"
         disabled={loading}
       >
         {loading ? (
           <>
-            <Spinner size={20} />Sending...
+            <Spinner size={20} />
+            Sending...
           </>
         ) : (
           "Fancy a talk?"

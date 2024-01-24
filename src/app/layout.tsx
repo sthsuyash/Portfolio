@@ -5,6 +5,7 @@ import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "sonner";
+import FramerTemplate from "@/components/FramerTemplate";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -82,7 +83,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
-          {children}
+          <FramerTemplate>{children}</FramerTemplate>
           <Toaster richColors position="bottom-left" />
           <Footer />
         </ThemeProvider>

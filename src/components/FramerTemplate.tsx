@@ -24,7 +24,7 @@ const FramerTemplate = ({ children }: FramerTemplateProps) => {
         initial="hidden"
         animate="enter"
         exit="exit"
-        transition={{ type: "linear", delay: 0.2, duration: 0.2 }}
+        transition={{ type: "", delay: 0.5, duration: 0.5 }}
       >
         {children}
       </motion.main>
@@ -33,7 +33,6 @@ const FramerTemplate = ({ children }: FramerTemplateProps) => {
         style={{ transform: `translateY(${complete - 100}%)` }}
         className="fixed z-50 bg-primary w-1 top-0 right-0 bottom-0 transition-all duration-700"
       ></span>
-      <div className="h-[4000px]"></div>
     </>
   );
 };

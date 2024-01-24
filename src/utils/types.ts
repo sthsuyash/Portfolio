@@ -30,3 +30,12 @@ export interface IServicesData {
   title: string;
   description: string;
 }
+
+export interface IProjectsData {
+  title: string;
+  description: string;
+  img: string;
+  tags: string[];
+  link?: string;
+  github?: string;
+}

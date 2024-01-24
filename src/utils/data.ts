@@ -3,6 +3,7 @@ import {
   IQualificationData,
   ISkillsData,
   IServicesData,
+  IProjectsData,
 } from "@/utils/types";
 
 export const InfoData: IInfoData[] = [
@@ -185,5 +186,49 @@ export const ServicesData: IServicesData[] = [
     title: "Mobile Development",
     description:
       "Celebrate your digital journey with my tailored mobile development services. I specialize in creating user-friendly and innovative mobile applications. Whether you're launching a new app or refining your current one, I'm here to bring your ideas to life. From sleek design to smooth functionality, let's build mobile solutions that resonate with your audience. Let's make your mobile presence remarkable together",
+  },
+];
+
+export const ProjectsData: IProjectsData[] = [
+  {
+    title: "GharBikri",
+    description:
+      "GharBikri is a real estate website, where users can buy, sell, and rent properties and makes the process of finding a property easy and hassle-free.",
+    img: "/work/gharbikri.png",
+    link: "https:gharbikri.vercel.app",
+    github: "https://github.com/sthsuyash/GharBikri",
+    tags: ["React", "Node.js", "Express.js", "PostgreSQL"],
+  },
+  {
+    title: "Data Analytics Projects",
+    description:
+      "This is a collection of data analytics projects that I have done. I used Python, Pandas, Numpy, and Matplotlib for data analysis and visualization.",
+    img: "/work/data-analytics.png",
+    github: "https://github.com/sthsuyash/Data-Analytics",
+    tags: ["Python", "Pandas", "Numpy", "Jupyter Notebook"],
+  },
+  {
+    title: "Orange Safe Pass",
+    description:
+      "Orange Safe Pass is a web application that helps to manage the entry and exit of people in an organization.",
+    img: "/work/orangepass.png",
+    link: "https://orangesafepass.com/",
+    tags: ["React", "Node.js", "Firebase"],
+  },
+  {
+    title: "ConnectCircle",
+    description:
+      "ConnectCircle is a social media website, where users can connect with each other and share their thoughts and ideas.",
+    img: "/work/connectcircle.png",
+    github: "",
+    tags: ["React", "Node.js", "Express.js", "MongoDB"],
+  },
+  {
+    title: "Chitchatify",
+    description:
+      "Chitchatify is a messaging application, where users can chat with each other and share their thoughts and ideas.",
+    img: "/work/chitchatify.png",
+    github: "https://github.com",
+    tags: ["React", "Node.js", "Express.js", "PostgreSQL"],
   },
 ];
