@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "sonner";
 import FramerTemplate from "@/components/FramerTemplate";
-
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  style: "normal",
-  subsets: ["latin-ext", "devanagari", "latin"],
-});
 
 export const metadata: Metadata = {
   title: "Suyash Shrestha",
@@ -43,18 +36,13 @@ export const metadata: Metadata = {
     "Netlify",
     "Vercel",
     "Firebase",
-    "Java",
-    "Spring Boot",
     "Python",
     "Django",
-    "C",
-    "C++",
-    "PHP",
-    "Laravel",
     "MySQL",
     "PostgreSQL",
     "SQLite",
-    "REST",
+    "REST API",
+    "GraphQL",
     "API",
     "JSON",
     "XML",
@@ -62,7 +50,6 @@ export const metadata: Metadata = {
     "Docker",
     "Linux",
     "WSL",
-    "WSL2",
     "Windows",
     "Go",
     "Vim",
@@ -80,7 +67,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-US">
-      <body className={poppins.className}>
+      <body>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           <FramerTemplate>{children}</FramerTemplate>

@@ -17,7 +17,7 @@ export const InfoData: IInfoData[] = [
   },
   {
     icon: "Mail",
-    text: "sthasuyash11@gmail.com",
+    text: "shrestha.suyash33@gmail.com",
   },
   {
     icon: "Home",
@@ -47,31 +47,22 @@ export const QualificationData: IQualificationData[] = [
       {
         company: "Yakana IT Solutions",
         title: "Junior Software Engineer",
-        position: "Full time",
         duration: "2023/07 - 2024/01",
       },
-      {
-        company: "Code for Nepal",
-        title: "Data Science Fellow",
-        position: "Apprenticeship",
-        duration: "2023/06 - 2024/02",
-      },
-      {
-        company: "Ecommerce",
-        title: "Software Developer",
-        position: "Freelance",
-        duration: "2023/01 - 2023/06",
-      },
+      // {
+      //   company: "Freelance",
+      //   title: "Software Developer",
+      //   position: "Freelance",
+      //   duration: "2023/01 - 2023/06",
+      // },
       {
         company: "Kiko Solutions",
         title: "Software Engineer",
-        position: "Remote",
-        duration: "2022/09 - 2023/06",
+        duration: "2022/08 - 2023/06",
       },
-       {
+      {
         company: "Kiko Solutions",
         title: "Software Engineer Intern",
-        position: "Remote",
         duration: "2022/05 - 2023/08",
       },
     ],
@@ -83,40 +74,17 @@ export const SkillsData: ISkillsData[] = [
     title: "Skills",
     data: [
       {
-        img: "/about/skills/html-5.svg",
-      },
-      {
         img: "/about/skills/python.svg",
-      },
-      {
-        img: "/about/skills/cpp.svg",
       },
       {
         img: "/about/skills/js.svg",
       },
       {
+        img: "/about/skills/typescript.svg",
+      },
+      {
         img: "/about/skills/node-js.svg",
       },
-      {
-        img: "/about/skills/css.svg",
-      },
-      {
-        img: "/about/skills/scss.svg",
-      },
-      {
-        img: "/about/skills/mongodb.svg",
-      },
-      {
-        img: "/about/skills/java.svg",
-      },
-      {
-        img: "/about/skills/spring.svg",
-      },
-
-      {
-        img: "/about/skills/react.svg",
-      },
-
       {
         img: "/about/skills/mysql.svg",
       },
@@ -124,20 +92,42 @@ export const SkillsData: ISkillsData[] = [
         img: "/about/skills/postgresql.svg",
       },
       {
-        img: "/about/skills/django.svg",
+        img: "/about/skills/mongodb.svg",
       },
       {
-        img: "/about/skills/firebase.svg",
+        img: "/about/skills/html-5.svg",
       },
       {
-        img: "/about/skills/typescript.svg",
+        img: "/about/skills/css.svg",
       },
+      {
+        img: "/about/skills/scss.svg",
+      },
+
+      {
+        img: "/about/skills/java.svg",
+      },
+      {
+        img: "/about/skills/spring.svg",
+      },
+      {
+        img: "/about/skills/react.svg",
+      },
+      // {
+      //   img: "/about/skills/django.svg",
+      // },
       {
         img: "/about/skills/nextjs.svg",
       },
       {
-        img: "/about/skills/go.svg",
+        img: "/about/skills/aws.svg",
       },
+      {
+        img: "/about/skills/firebase.svg",
+      },
+      // {
+      //   img: "/about/skills/go.svg",
+      // },
     ],
   },
   {
@@ -197,21 +187,38 @@ export const ServicesData: IServicesData[] = [
 
 export const ProjectsData: IProjectsData[] = [
   {
+    title: "Football Analysis System",
+    description:
+      "An advanced AI/ML system leveraging OpenCV and YOLO to provide real-time football match analysis and actionable insights.",
+    img: "/work/football-analysis.png",
+    github: "https://github.com/sthsuyash/AI-Football-Analysis-System",
+    tags: ["OpenCV", "YOLO", "Python", "Machine Learning"]
+  },
+  {
+    title: "RAG System",
+    description:
+      "An LLM project that improves data access and enhances information retrieval through intelligent interaction and context-aware responses.",
+    img: "/work/chatpdf.webp",
+    github: "https://github.com/sthsuyash/chat-pdf",
+    tags: ["Python", "Langchain", "LLM", "RAG", "Chatbot"],
+  },
+  {
     title: "GharBikri",
     description:
       "GharBikri is a real estate website, where users can buy, sell, and rent properties and makes the process of finding a property easy and hassle-free.",
     img: "/work/gharbikri.png",
-    link: "https:gharbikri.vercel.app",
+    link: "https://gharbikri.vercel.app",
     github: "https://github.com/sthsuyash/GharBikri",
     tags: ["React", "Node.js", "Express.js", "PostgreSQL"],
   },
   {
-    title: "Data Analytics Projects",
+    title: "Nepali News with Sentiment Analysis",
     description:
-      "This is a collection of data analytics projects that I have done. I used Python, Pandas, Numpy, and Matplotlib for data analysis and visualization.",
-    img: "/work/data-analytics.png",
-    github: "https://github.com/sthsuyash/Data-Analytics",
-    tags: ["Python", "Pandas", "Numpy", "Jupyter Notebook"],
+      "A news web portal that allows users to read articles with sentiment analysis for positivity with recommendation system.",
+    img: "/work/news.jpg",
+    link: "https://nepali-news-portal.vercel.app",
+    github: "https://github.com/sthsuyash/News-Portal",
+    tags: ["Python", "React", "Machine Learning", "NLP"],
   },
   {
     title: "Orange Safe Pass",
@@ -229,12 +236,12 @@ export const ProjectsData: IProjectsData[] = [
     github: "",
     tags: ["React", "Node.js", "Express.js", "MongoDB"],
   },
-  {
-    title: "Chitchatify",
-    description:
-      "Chitchatify is a messaging application, where users can chat with each other and share their thoughts and ideas.",
-    img: "/work/chitchatify.png",
-    github: "https://github.com",
-    tags: ["React", "Node.js", "Express.js", "PostgreSQL"],
-  },
+  // {
+  //   title: "Chitchatify",
+  //   description:
+  //     "Chitchatify is a messaging application, where users can chat with each other and share their thoughts and ideas.",
+  //   img: "/work/chitchatify.png",
+  //   github: "https://github.com",
+  //   tags: ["React", "Node.js", "Express.js", "PostgreSQL"],
+  // },
 ];

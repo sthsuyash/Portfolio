@@ -66,7 +66,7 @@ const AboutSection: React.FC = () => {
                     <ul className="grid xl:grid-cols-2 gap-4 mb-12">
                       {InfoData.map((item, index) => (
                         <li
-                          className="flex items-center gap-x-4 w-[270px] mx-auto xl:mx-0"
+                          className="flex items-center gap-x-4 w-[350px] mx-auto xl:mx-0"
                           key={index}
                         >
                           <Icon className="text-primary" name={item.icon} />
@@ -78,7 +78,7 @@ const AboutSection: React.FC = () => {
                     <div className="flex flex-col gap-y-2">
                       <div className="text-primary">Language</div>
                       <div className="border-b border-border"></div>
-                      <div>English, Nepali, Hindi</div>
+                      <div>English, Nepali, Norwaegian</div>
                     </div>
                   </div>
                 </TabsContent>
