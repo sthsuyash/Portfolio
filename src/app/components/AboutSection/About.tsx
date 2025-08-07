@@ -78,7 +78,7 @@ const AboutSection: React.FC = () => {
                     <div className="flex flex-col gap-y-2">
                       <div className="text-primary">Language</div>
                       <div className="border-b border-border"></div>
-                      <div>English, Nepali, Norwaegian</div>
+                      <div>English, Nepali</div>
                     </div>
                   </div>
                 </TabsContent>
@@ -105,7 +105,7 @@ const AboutSection: React.FC = () => {
                         <ul className="flex flex-col gap-y-8">
                           {getData(
                             QualificationData,
-                            "Work Experience",
+                            "Work Experience"
                           ).data.map((item: any, index: number) => {
                             const { title, company, position, duration } = item;
                             return (
@@ -120,7 +120,7 @@ const AboutSection: React.FC = () => {
                                   <div className="text-lg leading-none  text-muted-foreground mb-2">
                                     {title}
                                   </div>
-                                  <div className="text-base font-medium">
+                                  <div className="text-sm font-medium">
                                     {position}
                                   </div>
                                   <div className="text-base font-medium">
@@ -155,7 +155,7 @@ const AboutSection: React.FC = () => {
                                     <div className="font-semibold text-xl leading-none mb-2">
                                       {institute}
                                     </div>
-                                    <div className="text-lg leading-5 text-muted-foreground mb-2">
+                                    <div className="text-base leading-5 text-muted-foreground mb-2">
                                       {qualification}
                                     </div>
                                     <div className="text-base font-medium">
@@ -164,7 +164,7 @@ const AboutSection: React.FC = () => {
                                   </div>
                                 </div>
                               );
-                            },
+                            }
                           )}
                         </ul>
                       </div>
@@ -194,7 +194,7 @@ const AboutSection: React.FC = () => {
                                 />
                               </div>
                             );
-                          },
+                          }
                         )}
                       </div>
                     </div>
@@ -218,7 +218,7 @@ const AboutSection: React.FC = () => {
                                 />
                               </div>
                             );
-                          },
+                          }
                         )}
                       </div>
                     </div>

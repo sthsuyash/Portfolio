@@ -45,25 +45,19 @@ export const QualificationData: IQualificationData[] = [
     title: "Work Experience",
     data: [
       {
+        company: "Inspiring Lab",
+        title: "ML/AI Engineer Intern",
+        duration: "2025/01 - 2025/04",
+      },
+      {
         company: "Yakana IT Solutions",
         title: "Junior Software Engineer",
-        duration: "2023/07 - 2024/01",
-      },
-      // {
-      //   company: "Freelance",
-      //   title: "Software Developer",
-      //   position: "Freelance",
-      //   duration: "2023/01 - 2023/06",
-      // },
-      {
-        company: "Kiko Solutions",
-        title: "Software Engineer",
-        duration: "2022/08 - 2023/06",
+        duration: "2023/02 - 2024/03",
       },
       {
         company: "Kiko Solutions",
         title: "Software Engineer Intern",
-        duration: "2022/05 - 2023/08",
+        duration: "2022/05 - 2022/11",
       },
     ],
   },
@@ -102,13 +96,6 @@ export const SkillsData: ISkillsData[] = [
       },
       {
         img: "/about/skills/scss.svg",
-      },
-
-      {
-        img: "/about/skills/java.svg",
-      },
-      {
-        img: "/about/skills/spring.svg",
       },
       {
         img: "/about/skills/react.svg",
@@ -192,10 +179,10 @@ export const ProjectsData: IProjectsData[] = [
       "An advanced AI/ML system leveraging OpenCV and YOLO to provide real-time football match analysis and actionable insights.",
     img: "/work/football-analysis.png",
     github: "https://github.com/sthsuyash/AI-Football-Analysis-System",
-    tags: ["OpenCV", "YOLO", "Python", "Machine Learning"]
+    tags: ["OpenCV", "YOLO", "Python", "Machine Learning"],
   },
   {
-    title: "RAG System",
+    title: "AI Workflow System",
     description:
       "An LLM project that improves data access and enhances information retrieval through intelligent interaction and context-aware responses.",
     img: "/work/chatpdf.webp",
